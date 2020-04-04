@@ -6,7 +6,7 @@ import sys
 import urllib.request
 
 BASE_URL = "https://ipfs.infura.io:5001/api/v0/add?pin=false"
-READ_URL = "https://ipfs.infura.io:5001/api/v0/cat?arg="
+READ_URL = "https://ipfs.infura.io:5001/api/v0/cat?arg=Qmd34ms42podXiREMZeWuPoArpi8z1oLw3D8pJaPrxtFza"
 
 DOWNLOADS_PATH = 'downloads/'
 
