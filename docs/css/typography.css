@@ -1,0 +1,154 @@
+/*
+Vizion-Al/ML-Digital Marketing Responsive HTML5 Template
+Author: iqonicthemes.in
+Version: 1.0
+Design and Developed by: iqonicthemes.in
+*/
+
+/*================================================
+[  Table of contents  ]
+================================================
+
+1  Google Font
+2  Import Css
+3  General
+4  Text color
+6  Heading Title
+7  Button
+8  Background  color
+9  Back to Top
+10 Loader
+11 Background overlay color
+12 Extra class
+
+======================================
+[ End table content ]
+======================================*/
+
+/*---------------------------------------------------------------------
+Google Font
+-----------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Open+Sans:300,400,600');
+
+/*---------------------------------------------------------------------
+Import Css
+-----------------------------------------------------------------------*/
+@import url("all.min.css");
+@import url("owl.carousel.min.css");
+@import url("ionicons.min.css");
+@import url("wow.css");
+@import url("magnific-popup.css");
+
+/*---------------------------------------------------------------------
+General
+-----------------------------------------------------------------------*/
+*::-moz-selection { background: #46c894; color: #fff; text-shadow: none; }
+::-moz-selection { background: #46c894; color: #fff; text-shadow: none; }
+::selection { background: #46c894; color: #fff; text-shadow: none; }
+
+body { font-family: 'Open Sans', sans-serif; font-weight: normal; font-style: normal; font-size: 16px; line-height: 2em; color: #666666; }
+a { -webkit-transition: all 0.3s ease-out 0s; -moz-transition: all 0.3s ease-out 0s; -ms-transition: all 0.3s ease-out 0s; -o-transition: all 0.3s ease-out 0s; transition: all 0.3s ease-out 0s; }
+a:focus { text-decoration: none !important; }
+a:focus, a:hover { color: #46c894; text-decoration: none !important; }
+a, button{ outline: medium none !important; color: #46c894; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Josefin Sans', sans-serif; font-style: normal; font-weight: normal; color: #333333; margin: 0px; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
+label { font-weight: normal; }
+h1 { font-size: 80px; line-height: 1.3em; }
+h2 { font-size: 50px; line-height: 1.3em; }
+h3 { font-size: 30px; line-height: 1.3em; }
+h4 { font-size: 26px; line-height: 1.3em; }
+h5 { font-size: 24px; line-height: 1.3em; }
+h6 { font-size: 20px; line-height: 1.3em; }
+
+ul { margin: 0px; padding: 0px; }
+hr { margin: 0; padding: 0px; border-bottom: 1px solid #ffffff; display: inline-block; width: 100%; border-top: 0px; }
+
+
+/*---------------------------------------------------------------------
+Text color
+-----------------------------------------------------------------------*/
+.main-color { color: #46c894; }
+.text-white { color: #ffffff; }
+.text-black { color: #333333; }
+.text-gray { color: #666666; }
+
+/*---------------------------------------------------------------------
+Heading Title
+-----------------------------------------------------------------------*/
+.title-box { margin-bottom: 75px; text-align: center; }
+.title-box .title { margin-bottom: 5px; }
+.title-box .sub-title { margin: 0 150px; }
+
+/*----------------------------------------------------------------------
+ Buttons
+-----------------------------------------------------------------------*/
+.button { color: #ffffff; cursor: pointer; padding: 10px 40px; font-weight: 600; font-size: 16px; border: 2px solid #46c894; position: relative; background: rgba(117,205,111,1);
+background: -moz-linear-gradient(left, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(117,205,111,1)), color-stop(100%, rgba(70,200,148,1)));
+background: -webkit-linear-gradient(left, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+background: -o-linear-gradient(left, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+background: -ms-linear-gradient(left, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+background: linear-gradient(to right, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1 ); font-family: 'Josefin Sans', sans-serif; display: inline-block; -webkit-border-radius: 90px; -moz-border-radius: 90px; border-radius: 90px; -webkit-box-shadow: 6px 4px 20px 1px rgba(70, 200, 148, 0.25); -moz-box-shadow: 6px 4px 20px 1px rgba(70, 200, 148, 0.25); box-shadow: 6px 4px 20px 1px rgba(70, 200, 148, 0.25); }
+.button:hover, .button:focus { color: #ffffff; background: #46c894; }
+.subscribe-btn{background:#ffffff; color:#333333;  }
+
+/*---------------------------------------------------------------------
+Background  color
+-----------------------------------------------------------------------*/
+.white-bg { background: #ffffff; }
+.main-bg { background: #46c894;background: rgba(117,205,111,1);
+background: -moz-linear-gradient(left, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(117,205,111,1)), color-stop(100%, rgba(70,200,148,1)));
+background: -webkit-linear-gradient(left, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+background: -o-linear-gradient(left, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+background: -ms-linear-gradient(left, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+background: linear-gradient(to right, rgba(117,205,111,1) 0%, rgba(70,200,148,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1 ); }
+.black-bg { background: #333333; }
+.dark-bg { background: #222222 }
+
+
+/*---------------------------------------------------------------------
+Back to Top
+-----------------------------------------------------------------------*/
+#back-to-top .top { z-index: 999; position: absolute; margin: 0px; color: #ffffff; bottom: 1%; right: 1%; z-index: 9; font-weight: 600; overflow: hidden; }
+#back-to-top .top i { font-size: 28px; vertical-align: middle; }
+#back-to-top:hover .top i { top: 0; }
+#back-to-top .top:hover { color: rgba(255, 255, 255, 0.6); }
+
+/*---------------------------------------------------------------------
+Loader
+-----------------------------------------------------------------------*/
+#loading { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #ffffff; z-index: 9999; }
+
+#loading img{width: 150px;}
+
+/*---------------------------------------------------------------------
+Background overlay color
+-----------------------------------------------------------------------*/
+
+/* Background Gradient Black */
+.bg-over-black-10:before { background: rgba(195, 245, 225, 1); content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 0; }
+
+
+/*---------------------------------------------------------------------
+Extra class
+---------------------------------------------------------------------*/
+section { background: #ffffff; padding: 100px 0; }
+
+
+
+/*----------------
+ Row with equal height columns
+----------------*/
+.row-eq-height { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+
+
+/*************************
+   BG - Images
+*************************/
+.parallax { background-size: cover !important; -webkit-background-size: cover !important; -moz-background-size: cover !important; -ms-background-size: cover !important; position: relative; z-index: 0; background-origin: initial; background-position: center center !important; background-repeat: no-repeat; }
+

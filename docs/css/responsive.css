@@ -1,0 +1,178 @@
+/*
+Vizion-Al/ML-Digital Marketing Responsive HTML5 Template
+Author: iqonicthemes.in
+Version: 1.0
+Design and Developed by: iqonicthemes.in
+*/
+
+/*****************
+================================================
+(  Media Queries  )
+================================================
+*******************/
+@media only screen and (min-width:1890px) and (max-width:2529px) {
+	.conection-shap:before { width: 17%; }
+	.iq-clients:before { width: 13%; }
+}
+@media(max-width:1399px) {
+	.banner .banner-text h1 { font-size: 70px; line-height: 80px; }
+	.banner:before { top: 36%; }
+	.finding-shap:before { width: 42%; left: -125px; }
+	.Get-tips-tricks .tips-img img { max-width: 100%; }
+	.tricks-shap:before { height: 62%; }
+	.Service-shap:before { left: -154px; width: 27%; }
+	.iq-clients:before { right: -70px; }
+	.error-box { height: 600px; }
+}
+@media(max-width:1365px) {
+	.banner .banner-text h1 { font-size: 64px; line-height: 74px; }
+	.banner:before { top: 33%; width: 25%; }
+	.finding-shap:before { width: 45%; left: -208px; }
+}
+@media(max-width:1299px) {
+	.banner .banner-text h1 { font-size: 48px; line-height: 58px; }
+	.banner-type img { max-width: 119%; }
+	.banner:before { top: 28%; width: 32%; left: -15px; height: 71%; }
+	.finding-shap:before { width: 58%; left: -281px }
+	.tricks-shap:before { top: 34%; }
+	.Service-shap:before { left: -223px; width: 40%; }
+}
+@media(max-width:1199px) {
+	header .main-header { padding: 10px 50px 10px 50px; }
+	header.menu-sticky .main-header { padding: 10px 50px 10px 50px; }
+	.pricing-box { margin-bottom: 30px; }
+	footer .info-share a i.fab { line-height: 38px; }
+	footer .info-share a { width: 39px; height: 39px; line-height: 38px; }
+	.iq-team .share ul li a { width: 30px; height: 30px; line-height: 30px; font-size: 14px; }
+	.blog-box .content { padding: 18px; }
+	.title i { font-size: 20px; line-height: 30px; }
+}
+@media screen and (max-width:1024px) { }
+@media(max-width:992px) {
+	.iq-contactbox .contact-box .button { margin-bottom: 40px; }
+	.iq-breadcrumb { padding: 203px 0 70px 0; }
+	.banner:before { display: none; }
+	.iq-counter3 .iq-counter .timer { font-size: 50px; line-height: 60px; }
+	.iq-counter .mt-3 { margin-top: 10px !important; }
+	h4 { font-size: 20px; line-height: 30px; }
+	h3 { font-size: 24px; line-height: 34px; }
+	p { font-size: 14px; line-height: 24px; }
+	.iq-team-img img { margin-top: 40px; }
+	section { padding: 50px 0; }
+	.iq-rmb-30 { margin-bottom: 30px; }
+	.how-it-works { text-align: center; }
+	.easy-pricing-plans .pricing-box .button { padding: 10px 14px; font-size: 14px; }
+	.title-box { margin-bottom: 40px; }
+	.banner { padding: 150px 0 124px 0; }
+	.iq-team .share { top: 71px; }
+	.iq-team .share ul li { margin: 12px 0; }
+	.iq-clients .owl-carousel .owl-item img { margin: 0 auto; }
+	.banner .banner-text { padding-top: 0; }
+	.iq-tab.horizontal .nav-item { width: 26%; margin-bottom: 10px; }
+	.iq-tab .nav-pills { background-color: transparent; }
+	.iq-rmb-30 { margin-bottom: 30px }
+	.iq-team .share ul li a { width: 40px; height: 40px; line-height: 42px; }
+	.blogdetailbox .iq-sidebar-widget .iq-post li { width: 100% }
+	.blogdetailbox .iq-sidebar-widget .post-img img { width: 60px; }
+	header .navbar-light .navbar-collapse { position: absolute; top: 60px; width: 100%; background-color: #ffffff; box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); }
+	header .navbar-light .navbar-toggler { border-color: #46c894; }
+	header .navbar-light .navbar-nav .nav-link, header .navbar-light .navbar-nav .nav-link:focus { color: rgba(0, 0, 0, .9); }
+	header .navbar-light .navbar-nav li.active .nav-link, header .navbar-light .navbar-nav li .nav-link:hover { color: #46c894; background: transparent; }
+	header.menu-sticky .navbar-light .navbar-nav li.active .nav-link, header.menu-sticky .navbar-light .navbar-nav li .nav-link:hover { color: #46c894; background: transparent; }
+	.banner .banner-text { text-align: center; margin-bottom: 40px; }
+	header.menu-sticky .navbar-light .navbar-nav .nav-link, header.menu-sticky .navbar-light .navbar-nav .nav-link:focus { color: #222222; }
+	.banner { padding: 150px 0 9px 0; }
+	.iq-post-sidebar { margin-top: 40px; }
+}
+@media(max-width:979px) {
+	.title-box .sub-title { margin: 0 49px; }
+	.banner-type img { max-width: 100%; }
+	.how-it-works { text-align: center; }
+	.iq-team .share ul li { margin: 5px 0; }
+	.iq-team .share { top: 47px; }
+	.iq-team:hover .iq-team-info { padding: 0; }
+	.iq-breadcrumb3 img.iq-breadcrumb3-after { display: none; }
+	.iq-breadcrumb3 { padding: 141px 0 85px 0; }
+	.banner img.banner-after { display: none; }
+	.banner { padding: 150px 0 65px 0; }
+	.iq-frequently { padding: 60px 50px 40px 50px; }
+	.iq-video { left: 10px; }
+	.banner { padding: 150px 0 24px 0; }
+	.finding-shap:before { width: 76%; }
+	.Service-shap:before { width: 52%; height: 55%; }
+	.tricks-shap:before { top: 26%; height: 74%; }
+	.service-provide .services { padding: 30px 15px 20px 15px; }
+}
+@media(max-width:767px) {
+	.iq-coming .big-text { font-size: 50px; line-height: 60px; }
+	.service-provide .rplr-30 { padding: 0 30px; }
+	.sub-header .btn-group { display: none; }
+	.iq-team-img img { margin-top: 30px; }
+	.button-banner { margin-bottom: 40px; }
+	.how-it-works { text-align: center; }
+	.title-box .sub-title { margin: 0 5px; }
+	.iq-tab.horizontal .nav-item { width: 43%; }
+	.iq-rmt-20 { margin-top: 20px; }
+	h2 { font-size: 34px; line-height: 44px; }
+	.blogdetailbox .media { display: inline-block; }
+	.blogdetailbox .iq-comment-list .media-body h5 { margin-top: 10px; }
+	.iq-coming .button { bottom: 0; }
+	.iq-video { right: -5px; top: -29px; }
+	header.menu-sticky .main-header { padding: 10px 50px 10px 50px; }
+	header .main-header { padding: 10px 50px 10px 50px; }
+	.finding-shap:before { width: 121%; }
+	footer .footer-logo { margin-bottom: 30px; }
+	footer .footer-menu li:first-child a { padding: .5rem  1rem .5rem 0; }
+	.get-tips-tricks h3 { margin-top: 20px; }
+	.Service-shap:before { width: 82%; }
+	.iq-detail-box img { margin-top: 30px; width: 100%; }
+	.error-box { height: 500px; }
+	.blogdetailbox .iq-blog-entry .media-box li { display: inline-block; }
+}
+@media(max-width:600px) { }
+@media(max-width:575px) {
+	.iq-coming .iq-subscribe .form-control { width: 100%; }
+	.iq-coming .big-text { font-size: 50px; color: #ffffff; line-height: 60px; }
+}
+@media(max-width:479px) {
+	.iq-coming .big-text { font-size: 40px; line-height: 50px; margin-bottom: 30px !important; }
+	.iq-tab .nav-pills { background: transparent; border: 1px solid transparent; padding: 0; }
+	footer .footer-menu li:last-child a { padding: .5rem  0 .5rem 0.8rem; }
+	header.menu-sticky .main-header { padding: 10px 15px 10px 15px; }
+	header .main-header { padding: 10px 15px 10px 15px; }
+	.banner .banner-text h1 { font-size: 35px; line-height: 45px; }
+	header .sub-main { padding-right: 0; }
+	header .sub-header { padding: 10px 15px; }
+	footer .right-footer { padding-right: 0 }
+	footer .footer-menu li:first-child a { padding: .5rem  0.8rem .5rem 0; }
+	footer .footer-menu li a { padding: .5rem 0.8rem; font-size: 14px; }
+	.Service-shap:before { width: 110%; }
+	footer .justify-content-between h6 { margin-bottom: 30px; }
+	.button-banner { margin-bottom: 40px; }
+	.how-it-works { padding: 10px; }
+	.title-box .sub-title { margin: 0 5px; }
+	.easy-pricing-plans.gray-bg { padding: 30px 0; }
+	.title-box .title { margin-bottom: 10px; font-size: 35px; line-height: 45px; }
+	.iq-team-img img { margin-top: 30px; }
+	.iq-frequently { padding: 45px 15px; }
+	h3 { font-size: 25px; line-height: 35px; }
+	.iq-tab.horizontal .nav-item { width: 50%; }
+	.iq-tab.horizontal .nav-item a { font-size: 14px; font-weight: 700; }
+	.blogdetailbox .info-block { padding: 0; }
+	.iq-login-regi .iq-login .link { text-align: left; }
+	h1 { font-size: 42px; line-height: 52px; }
+	.time-of-year .tooltip { width: 280px; left: 63%; }
+	.iq-coming #countdown li { margin: 0; }
+	.iq-coming #countdown li span { font-size: 24px; line-height: 24px; }
+	.iq-coming #countdown li p { font-size: 14px; line-height: 20px; font-weight: inherit; }
+	.iq-coming #countdown li span:after { content: none; }
+	.iq-coming form .form-control { width: 230px; }
+
+}
+@media(max-width:359px) {
+	.iq-coming .big-text { font-size: 32px; line-height: 42px; }
+	.iq-coming h5 { font-size: 14px; }
+	.iq-coming #countdown { margin-top: 20px !important; }
+	.iq-coming .form-row>.col, .iq-coming .form-row>[class*=col-] { width: 100%; }
+	.iq-coming form .form-control, .iq-coming form .button { width: 100%; border-radius: 10px; text-align: center; }
+}
