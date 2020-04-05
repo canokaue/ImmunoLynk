@@ -1,9 +1,5 @@
-WSGIDaemonProcess immunolynk threads=5
-WSGIScriptAlias / /var/www/html/immunolynk.wsgi
+#immunolynk.wsgi
+import sys
+sys.path.insert(0, '/var/www/html/immunolynk')
 
-<Directory immunolynk>
-    WSGIProcessGroup immunolynk
-    WSGIApplicationGroup %{GLOBAL}
-    Order deny,allow
-    Allow from all
-</Directory>
+from server import server as application
