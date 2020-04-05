@@ -28,8 +28,11 @@ def receive_image():
         with open ('current_data.json', 'w') as cd:
             json.dump(message, cd)
         return jsonify(message)
-    except:
-        return jsonify({'status' : 'Error receiving message.'})
+    except Exception as e:
+        message = 'Error receiving message: % s' % e
+        with open ('error.json', 'w') as err:
+            json.dump(message, err)
+        return jsonify({'status' : message})
 
 
 def clean_response(response):
