@@ -5,7 +5,7 @@ This is a simple but effective implementation of a blockchain-based descentraliz
 
 The project is divided into the sections bellow.
 
-<img src="designs/cover.png" align="center" />
+<img src="designs/cover.jpg" align="center" />
 
 ## Immuno Lynk backend (server)
 
