@@ -6,7 +6,9 @@ from tempfile import NamedTemporaryFile
 
 server = Flask(__name__)
 
-PORT = '5000'
+PORT = '80'
+
+HOST = '0.0.0.0'
 
 MYIP = ''
 
@@ -52,7 +54,7 @@ def process_json():
 
 
 if __name__ == '__main__':
-    server.run(debug=False, port=PORT)
+    server.run(host=HOST, debug=False, port=PORT)
 
 
 # .json input example input - use for debugging
