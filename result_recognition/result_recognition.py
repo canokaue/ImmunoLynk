@@ -26,6 +26,82 @@ TRAIN_IMAGES_DIR = TEST_IMAGES_DIR = 'trimg/'
 
 WEIGHTS_PATH = 'resnet50_weights.h5'
 
+class TestResModel:
+    def __init__(self, engine, input_dims, batch_size=5, num_epochs=4,
+                 n_classes=4, learning_rate=1e-3, n_augment = 9,
+                 decay_rate=1.0, decay_steps=1, weights=WEIGHTS_PATH, verbose=1):
+        self.engine = engine
+        self.input_dims = input_dims
+        self.batch_size = batch_size
+        self.num_epochs = num_epochs
+        self.n_classes = n_classes
+        self.learning_rate = learning_rate
+        self.decay_rate = decay_rate
+        self.decay_steps = decay_steps
+        self.n_augment = n_augment
+        self.weights = weights
+        self.verbose = verbose
+        self._build()
+    def _build(self):
+        self.engine.trainable = True
+        engine = self.engine(include_top=False,
+                             weights=self.weights, input_shape=(*self.input_dims[:2], 3),
+                             backend = keras.backend, layers = keras.layers, 
+                             models = keras.models, utils = keras.utils,)
+        set_trainable = False
+        for layer in engine.layers:
+        #    if layer.name in ['res5c_branch2b', 'res5c_branch2c', 'activation_97']:
+        #      set_trainable = True
+        #    if set_trainable:
+        #      layer.trainable = False
+        #    else:
+            layer.trainable = False
+        x = keras.layers.GlobalAveragePooling2D(name='max_pool')(engine.output)
+        out = keras.layers.Dense(self.n_classes, activation="sigmoid", name='dense_output')(x)
+        self.model = keras.models.Model(inputs=engine.input, outputs=out)
+        # loss function has been changed needs to be investigated.
+        self.model.compile(loss='categorical_crossentropy',
+                           optimizer=keras.optimizers.Adam(),
+                           metrics=['accuracy'])
+    def fit_and_predict(self, train_df, valid_df, test_df):
+        # callbacks
+        pred_history = PredictionCheckpoint(test_df, valid_df,
+                                            n_classes=self.n_classes,
+                                            batch_size=self.batch_size,
+                                            input_size=self.input_dims)
+        #checkpointer = keras.callbacks.ModelCheckpoint(filepath='%s-{epoch:02d}.hdf5' % self.engine.__name__, verbose=1, save_weights_only=True, save_best_only=False)
+        scheduler = keras.callbacks.LearningRateScheduler(lambda epoch: self.learning_rate * pow(self.decay_rate, floor(epoch / self.decay_steps)))
+        self.model.fit_generator(
+            DataGenerator(
+                list_IDs = train_df.index, 
+                img_labels = train_df,
+                batch_size=self.batch_size,
+                img_size=self.input_dims,
+                img_dir=TRAIN_IMAGES_DIR,
+                n_classes = self.n_classes,
+                train=True,
+                n_augment = self.n_augment,
+                shuffle = True
+            ),
+            epochs=self.num_epochs,
+            verbose=self.verbose,
+            #use_multiprocessing=True,
+            #workers=4#,
+            #callbacks=[history]
+            #callbacks=[tensorboard_callback]
+        )
+        return pred_history
+    def predict(self, image_name, path2image=TRAIN_IMAGES_DIR):
+        #### Predict one image at a time
+        X = _read( path2image + image_name,self.input_dims,0, plot=False)
+        res = self.model.predict(X, batch_size=1)
+        return res
+    def save(self, path):
+        self.model.save_weights(path)
+    def load(self, path):
+        self.model.load_weights(path)
+
+
 class MyDeepModel:
     
     def __init__(self, engine, input_dims, batch_size=5, num_epochs=4,
@@ -92,6 +168,12 @@ class MyDeepModel:
         )
         
         return pred_history
+
+    def predict(self, image_name, path2image=TRAIN_IMAGES_DIR):
+        #### Predict one image at a time
+        X = _read( path2image + image_name, self.input_dims,0, plot=False)
+        res = self.model.predict(X, batch_size=1)
+        return res
     
     def save(self, path):
         self.model.save_weights(path)
@@ -347,32 +429,31 @@ def read_trainset(filename="trimg/classification_labels.txt"):
     df.columns = ["ID", "label"]
     return df
 
-# TEST LABEL READ
-test_df = read_testset()
-df = read_trainset()
-# print(test_df)
-# print(df)
+# # TEST LABEL READ
+# test_df = read_testset()
+# df = read_trainset()
+# # print(test_df)
+# # print(df)
 
-# train set (80%) and validation set (20%)
-ss = ShuffleSplit(n_splits=10, test_size=0.1, random_state=42).split(df.index)
+# # train set (80%) and validation set (20%)
+# ss = ShuffleSplit(n_splits=10, test_size=0.1, random_state=42).split(df.index)
 
-# lets go for the first fold only
-train_idx, valid_idx = next(ss)
+# # lets go for the first fold only
+# train_idx, valid_idx = next(ss)
 
 # obtain model
-model = MyDeepModel(engine=ResNet50, input_dims=(224,224, 3),
-                    batch_size=1, learning_rate=5e-5, n_classes=4,
-                    num_epochs=1, decay_rate=0.8, decay_steps=1,
-                    weights='imagenet', verbose=2)
+model = TestResModel(engine=ResNet50, input_dims=(224, 224, 3), batch_size=3,
+                     learning_rate=5e-4, n_augment = 0,
+                    num_epochs=12, decay_rate=0.8, decay_steps=1, weights="imagenet", verbose=2)
 
 model.load(WEIGHTS_PATH)
 
+prediction = model.predict('image0.jpg')
 # predict = model.model.predict(_read('trimg/image1.jpg',(224,224,3),9, plot=True))
-# print(predict)
+print(prediction)
 
-history = model.fit_and_predict(df.iloc[train_idx], df.iloc[valid_idx], test_df)
-print(history)
-
+# history = model.fit_and_predict(df.iloc[train_idx], df.iloc[valid_idx], test_df)
+# print(history)
 
 
 # predict = model.predict(_read('trimg/image1.jpg',(512,512,3),9, plot=True))

@@ -3,10 +3,17 @@ from flask import Flask, jsonify,request
 import os
 import json
 from tempfile import NamedTemporaryFile
+from result_recognition import TestResModel
+from keras_applications.resnet import ResNet50
+
 
 server = Flask(__name__)
 
-PORT = '80'
+PORT = '5000'
+
+THREAD_RUN = False # keep false for model
+
+DEBUG_RUN = False
 
 HOST = '0.0.0.0'
 
@@ -14,6 +21,13 @@ MYIP = ''
 
 _current_imagepath = ''
 _current_datapath = ''
+
+model = TestResModel(engine=ResNet50, input_dims=(224, 224, 3), batch_size=3,
+                     learning_rate=5e-4, n_augment = 0,
+                    num_epochs=12, decay_rate=0.8, decay_steps=1, weights="imagenet", verbose=2)
+
+model.load('resnet50_weights.h5')
+
 
 @server.route('/image', methods=['POST'])
 def receive_image():
@@ -27,6 +41,11 @@ def receive_image():
         # Upload to blockchain, save current data and return link to client
         response = ipfs.upload_ipfs(_current_imagepath, 'IMG', _current_imagepath)
         message = clean_response(response)
+
+        # Predict image test result and append to message
+        result = model.predict(filename)
+        message['result'] = str(result)
+
         with open ('current_data.json', 'w') as cd:
             json.dump(message, cd)
         return jsonify(message)
@@ -54,7 +73,7 @@ def process_json():
 
 
 if __name__ == '__main__':
-    server.run(host=HOST, debug=False, port=PORT)
+    server.run(host=HOST, debug=DEBUG_RUN, port=PORT, threaded=THREAD_RUN)
 
 
 # .json input example input - use for debugging
