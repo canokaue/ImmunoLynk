@@ -1,0 +1,10 @@
+image0 3
+image1 3
+image2 3
+image3 0
+image4 1
+image5 2
+image6 3
+image7 0
+image8 0
+image9 0

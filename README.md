@@ -65,9 +65,11 @@ Code is available at [Excellence Ilesamni's repo](https://github.com/lon-io/immu
 
 ## Result recognition network (Deep Learning Model)
 
-Model built using Tensorflow 1.0, Keras and OpenCV2 to detect stripes on the image and determine the test results automatically from the uploaded and processes image.
+Model built using Keras and OpenCV2 to detect stripes on the image and determine the test results automatically from the uploaded and processes image.
 
-Very simplified implementation. More data would be needed in order to achieve better results.
+Full code found in VeereshShringar's [repo](https://github.com/VeereshShringari/COVID-testing).
+
+A very simple legacy implementation done at the MIT Hackathon is located at result_recognition_old/, though it's not used anymore.
 
 ## Blockchain database alternative
 
