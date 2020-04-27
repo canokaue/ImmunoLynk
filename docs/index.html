@@ -40,28 +40,30 @@
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
-              <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home</a>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#codebase">Codebase</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#learnmore">Learn More</a>
+                    </li>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#saibamais">Sobre</a>
+                    <a class="nav-link" href="#team">Our Team</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://deel.ufsc.br/2019/10/29/premiacao-na-3a-edicao-do-hackathon/" target='_blank'>Mídia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="dashboard/index.html">Dashboard</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://rocky-beach-45124.herokuapp.com/feedbacks/">Feedbacks</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
-                  </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
                 </ul>
-              </div> -->
+              </div>
             </nav>
           </div>
         </div>
@@ -69,7 +71,7 @@
     </header>
     <!-- Header-->
     <!-- Banner-->
-    <div class="banner">
+    <div class="banner" id="home">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6">
@@ -98,8 +100,16 @@
     <!--=================================
     MAIN CONTENT -->
     <div class="main-content">
-      <section class="how-it-works conection-shap">
+      <section class="how-it-works conection-shap" id="features">
         <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box">
+                <h2 class="title font-weight-bold">Features</h2>
+                <p class="sub-title">Tech working on your side.</p>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-lg-4 col-md-4">
               <div class="future-services text-center wow slideInUp" data-wow-duration="0.5s">
@@ -133,8 +143,17 @@
       </section>
       <!-- How It Works-->
       <!-- Easy Pricing Plans-->
-      <section class="pt-0 finding-shap">
+      <section class="pt-0 finding-shap" id="codebase">
         <div class="container">
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box">
+                <h2 class="title font-weight-bold">Codebase</h2>
+                <p class="sub-title">See it for yourself.</p>
+              </div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-6">
               <div class="fully-dedicated wow slideInLeft">
@@ -162,7 +181,7 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="iq-counter iq-pt-30 iq-rmb-30">
                 <span class="timer text-white" data-to="65" data-speed="5000">65</span>
-                <h6 class="mt-3 text-white">% respondents say staff shortage is an issue</h6>
+                <h6 class="mt-3 text-white">% of healthcare workers say staff shortage is an issue</h6>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -174,7 +193,7 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="iq-counter iq-pt-30 iq-rmb-30">
                 <span class="timer text-white" data-to="20" data-speed="5000">20</span>
-                <h6 class="mt-3 text-white">% of health care spending is wasteful due to unnecessary tests</h6>
+                <h6 class="mt-3 text-white">% of healthcare spending is wasteful due to unnecessary tests</h6>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
@@ -199,13 +218,13 @@
               <div class="ml-3 mt-3">
                 <h3 class="font-weight-bold">Get a peak of our analytics.</h3>
                 <p class="mt-3">Empower your decisions with trustless data.</p>
-                <a class="button mt-3" href="https://immunolynk.herokuapp.com/">Access</a>
+                <a class="button mt-3" href="https://immunolynk.herokuapp.com/">Dashboard Demo</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="service-provide Service-shap pt-0">
+      <!-- <section class="service-provide Service-shap pt-0">
         <div class="container" id='saibamais'>
           <div class="row">
             <div class="col-sm-12">
@@ -284,7 +303,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 <!-- About -->
 <!-- <section class=" about-agency pt-0">
   <div class="container">
@@ -319,8 +338,15 @@
 </section> -->
 <!-- About End -->
 <!-- Tab 4 -->
-<section class="iq-tab horizontal gray-bg pt-0">
+<section class="iq-tab horizontal gray-bg pt-0" id="learnmore">
   <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box">
+          <h2 class="title font-weight-bold">Learn More</h2>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-12">
         <!-- Nav tabs -->
@@ -328,9 +354,9 @@
           <li class="nav-item iq-r-mb-15">
             <a class="nav-link active" id="retina1-tab" data-toggle="pill" href="#retina1" role="tab" aria-controls="retina1" aria-selected="true">Market</a>
           </li>
-          <li class="nav-item iq-r-mb-15">
+          <!-- <li class="nav-item iq-r-mb-15">
             <a class="nav-link" id="designs1-tab" data-toggle="pill" href="#designs1" role="tab" aria-controls="designs1" aria-selected="false">Pricing</a>
-          </li>
+          </li> -->
           <li class="nav-item iq-r-mb-15">
             <a class="nav-link" id="customize1-tab" data-toggle="pill" href="#customize1" role="tab" aria-controls="customize1" aria-selected="false">Legal</a>
           </li>
@@ -352,13 +378,13 @@
                 <img src="images/about/03.png" class="img-fluid " alt="">
               </div>
               <div class="col-lg-6  col-md-6 text-left align-self-center">
-                <h6 class="mb-2">We’re Creative Agency</h6>
-                <h3 class="font-weight-bold">That Focuses On Digital Design Solutions</h3>
-                <p class="mt-4">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+                <h6 class="mb-2">Rapid Rollout</h6>
+                <h3 class="font-weight-bold">We scale with the pandemic</h3>
+                <p class="mt-4">We are targeting government programs sponsoring the advancement of healthcare interoperability to connect with a pilot hospital department, leveraging their existing antibody test sourcing. After a brief 3 week pilot, we will expand to the hospital and onwards.</p>
               </div>
             </div>
           </div>
-          <div class="tab-pane" id="designs1">
+          <!-- <div class="tab-pane" id="designs1">
             <div class="row">
               <div class="col-lg-6 col-md-6 iq-mb-30">
                 <img src="images/about/04.png" class="img-fluid " alt="">
@@ -369,16 +395,16 @@
                 <p class="mt-4">Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="tab-pane" id="customize1">
             <div class="row flex-row-reverse">
               <div class="col-lg-6 col-md-6 iq-mb-30">
                 <img src="images/about/05.png" class="img-fluid " alt="">
               </div>
               <div class="col-lg-6 col-md-6 text-left align-self-center">
-                <h6 class="mb-2">The standard Lorem Ipsum passage</h6>
-                <h3 class="font-weight-bold">We Are An Agency That Focuses On Digital Design Solutions</h3>
-                <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <h6 class="mb-2">Modern problems require</h6>
+                <h3 class="font-weight-bold">Modern solutions</h3>
+                <p class="mt-4">Our focus on decentralised technology promotes Regulation (EU) No 910 of the European Parliament and of the Council (eIDAS) via enhancing access, security and trust in electronic health record systems. The eHealth Digital Service Infrastructure (‘eHDSI’) and all relevant eHDSI policy about the EU’s specific data privacy & transparency requirements are also complied with.</p>
               </div>
             </div>
           </div>
@@ -440,16 +466,15 @@
       <div class="col-sm-12 col-lg-3 col-md-6">
         <div class="iq-team  wow slideInUp" data-wow-duration="0.5s">
           <div class="iq-team-img">
-            <img src="images/bg/01.png" class="img-fluid center-block" alt="#">
+            <img src="images/bg/1.png" class="img-fluid center-block" alt="#">
           </div>
           <div class="iq-team-info text-center">
-            <h5>Js Adams</h5>
-            <span class="team-post iq-tw-5">Web Designer</span>
+            <h5>Niamh Higgins</h5>
+            <span class="team-post iq-tw-5">Business Dev | Harvard</span>
           </div>
           <div class="share">
             <ul>
-              <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/hireniamh/"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
         </div>
@@ -457,16 +482,16 @@
       <div class="col-sm-12 col-lg-3 col-md-6 r4-mt-30">
         <div class="iq-team  wow slideInUp" data-wow-duration="1s">
           <div class="iq-team-img">
-            <img src="images/bg/04.png" class="img-fluid center-block" alt="#">
+            <img src="images/bg/3.png" class="img-fluid center-block" alt="#">
           </div>
           <div class="iq-team-info text-center">
-            <h5>Maecal Oberoi</h5>
-            <span class="team-post iq-tw-5">Web Designer</span>
+            <h5>Kaue Cano</h5>
+            <span class="team-post iq-tw-5">Blockchain Engineer</span>
           </div>
           <div class="share">
             <ul>
-              <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/kcano/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/canokaue"><i class="fab fa-github"></i></a></li>
             </ul>
           </div>
         </div>
@@ -474,16 +499,15 @@
       <div class="col-sm-12 col-lg-3 col-md-6 r-mt-30">
         <div class="iq-team  wow slideInUp" data-wow-duration="1.5s">
           <div class="iq-team-img">
-            <img src="images/bg/03.png" class="img-fluid center-block" alt="#">
+            <img src="images/bg/4.png" class="img-fluid center-block" alt="#">
           </div>
           <div class="iq-team-info text-center">
-            <h5>Jason Deol</h5>
-            <span class="team-post iq-tw-5">Web Designer</span>
+            <h5>Shivam Vedak</h5>
+            <span class="team-post iq-tw-5">Resident Physician MD/MBA</span>
           </div>
           <div class="share">
             <ul>
-              <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/svedak/"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
         </div>
@@ -491,16 +515,15 @@
       <div class="col-sm-12 col-lg-3 col-md-6">
         <div class="iq-team  wow slideInUp" data-wow-duration="2s">
           <div class="iq-team-img">
-            <img src="images/bg/02.png" class="img-fluid center-block" alt="#">
+            <img src="images/bg/5.png" class="img-fluid center-block" alt="#">
           </div>
           <div class="iq-team-info text-center">
-            <h5>Js Adams</h5>
-            <span class="team-post iq-tw-5">Web Designer</span>
+            <h5>Khush Tawar</h5>
+            <span class="team-post iq-tw-5">Industrial Designer</span>
           </div>
           <div class="share">
             <ul>
-              <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fab fa-github"></i></a></li>
+              <li><a href="Khush Tawar"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
         </div>
@@ -508,16 +531,16 @@
       <div class="col-sm-12 col-lg-3 col-md-6">
         <div class="iq-team  wow slideInUp" data-wow-duration="0.5s">
           <div class="iq-team-img">
-            <img src="images/bg/01.png" class="img-fluid center-block" alt="#">
+            <img src="images/bg/6.png" class="img-fluid center-block" alt="#">
           </div>
           <div class="iq-team-info text-center">
-            <h5>Js Adams</h5>
-            <span class="team-post iq-tw-5">Web Designer</span>
+            <h5>Excellence Ilesanmi</h5>
+            <span class="team-post iq-tw-5">Senior Software Engineer</span>
           </div>
           <div class="share">
             <ul>
-              <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/lonilesanmi/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/lon-io/"><i class="fab fa-github"></i></a></li>
             </ul>
           </div>
         </div>
@@ -525,16 +548,15 @@
       <div class="col-sm-12 col-lg-3 col-md-6 r4-mt-30">
         <div class="iq-team  wow slideInUp" data-wow-duration="1s">
           <div class="iq-team-img">
-            <img src="images/bg/04.png" class="img-fluid center-block" alt="#">
+            <img src="images/bg/7.png" class="img-fluid center-block" alt="#">
           </div>
           <div class="iq-team-info text-center">
-            <h5>Maecal Oberoi</h5>
-            <span class="team-post iq-tw-5">Web Designer</span>
+            <h5>Natra Zeryihun</h5>
+            <span class="team-post iq-tw-5">UX Designer</span>
           </div>
           <div class="share">
             <ul>
-              <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/natrazeryihun/"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
         </div>
@@ -542,16 +564,15 @@
       <div class="col-sm-12 col-lg-3 col-md-6 r-mt-30">
         <div class="iq-team  wow slideInUp" data-wow-duration="1.5s">
           <div class="iq-team-img">
-            <img src="images/bg/03.png" class="img-fluid center-block" alt="#">
+            <img src="images/bg/8.png" class="img-fluid center-block" alt="#">
           </div>
           <div class="iq-team-info text-center">
-            <h5>Jason Deol</h5>
-            <span class="team-post iq-tw-5">Web Designer</span>
+            <h5>Eva Vyas</h5>
+            <span class="team-post iq-tw-5">Chief Marketing Officer</span>
           </div>
           <div class="share">
             <ul>
-              <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/evyas/"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
         </div>
@@ -559,16 +580,81 @@
       <div class="col-sm-12 col-lg-3 col-md-6">
         <div class="iq-team  wow slideInUp" data-wow-duration="2s">
           <div class="iq-team-img">
-            <img src="images/bg/02.png" class="img-fluid center-block" alt="#">
+            <img src="images/bg/10.png" class="img-fluid center-block" alt="#">
           </div>
           <div class="iq-team-info text-center">
-            <h5>Js Adams</h5>
-            <span class="team-post iq-tw-5">Web Designer</span>
+            <h5>Freddy Bunbury</h5>
+            <span class="team-post iq-tw-5">Researcher @ Stanford</span>
+          </div>
+          <div class="share">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/freddy-bunbury-36a4b6a0/"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6">
+        <div class="iq-team  wow slideInUp" data-wow-duration="2s">
+          <div class="iq-team-img">
+            <img src="images/bg/11.png" class="img-fluid center-block" alt="#">
+          </div>
+          <div class="iq-team-info text-center">
+            <h5>Dmytro Ustianenko</h5>
+            <span class="team-post iq-tw-5">Researcher @ Columbia</span>
+          </div>
+          <div class="share">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/dmytro-ustianenko/"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6">
+        <div class="iq-team  wow slideInUp" data-wow-duration="2s">
+          <div class="iq-team-img">
+            <img src="images/bg/9.png" class="img-fluid center-block" alt="#">
+          </div>
+          <div class="iq-team-info text-center">
+            <h5>Anurag Koyyada</h5>
+            <span class="team-post iq-tw-5">AI & ML Expert</span>
           </div>
           <div class="share">
             <ul>
               <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="javascript:void(0)"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6">
+        <div class="iq-team  wow slideInUp" data-wow-duration="2s">
+          <div class="iq-team-img">
+            <img src="images/bg/12.png" class="img-fluid center-block" alt="#">
+          </div>
+          <div class="iq-team-info text-center">
+            <h5>Claire Donnat</h5>
+            <span class="team-post iq-tw-5">AI & ML Expert</span>
+          </div>
+          <div class="share">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/claire-donnat-a4200272/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/donnate"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-3 col-md-6">
+        <div class="iq-team  wow slideInUp" data-wow-duration="2s">
+          <div class="iq-team-img">
+            <img src="images/bg/13.png" class="img-fluid center-block" alt="#">
+          </div>
+          <div class="iq-team-info text-center">
+            <h5>Veeresh Shringari</h5>
+            <span class="team-post iq-tw-5">AI & ML Expert</span>
+          </div>
+          <div class="share">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/veereshshringari/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/VeereshShringari/"><i class="fab fa-github"></i></a></li>
             </ul>
           </div>
         </div>
@@ -579,7 +665,7 @@
 <!-- Our Team end-->
       <!--=================================
       Clients -->
-      <section class="iq-clients pt-0">
+      <!-- <section class="iq-clients pt-0">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
@@ -626,8 +712,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="iq-contactbox pt-0">
+      </section> -->
+      <section class="iq-contactbox pt-0" id="contact">
         <div class="container">
            <div class="row justify-content-between">
               <div class="col-lg-6 align-self-center">
@@ -715,22 +801,30 @@
               <a href="index.html"><img src="images/logo-white.png" alt="img"></a>
             </div>
           </div>
-          <!-- <div class="col-auto right-footer">
+          <div class="col-auto right-footer">
             <ul class="nav footer-menu">
               <li class="nav-item">
                 <a class="nav-link " href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#saibamais">Saiba Mais</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="dashboard/index.html">Dashboard</a>
+                <a class="nav-link" href="#codebase">Codebase</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contato">Contato</a>
+                <a class="nav-link" href="#learnmore">Learn More</a>
               </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Our Team</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
             </ul>
-          </div> -->
+          </div>
         </div>
         <hr class="pt-5">
         <div class="pt-3">
@@ -742,9 +836,9 @@
         </div>
       </div>
       <!-- back-to-top -->
-      <!-- <div id="back-to-top">
-        <a class="top" id="top" href="#top"><span>Voltar ao topo</spa/><i class="ion-ios-arrow-up"></i></a>
-      </div> -->
+      <div id="back-to-top">
+        <a class="top" id="top" href="#top"><span>Top</spa/><i class="ion-ios-arrow-up"></i></a>
+      </div>
       <!-- back-to-top End -->
     </footer>
 
