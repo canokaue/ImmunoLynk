@@ -60,6 +60,8 @@ Response:
 
 App built using React components through [expo.io](expo.io) that reads QR Code, automatically takes a snapshot of the test and send's to backend server.
 
+We also have an analytical [dashboard webapp](https://github.com/lon-io/immunolynk-dashboard).
+
 Code is available at [Excellence Ilesamni's repo](https://github.com/lon-io/immunolynk-app).
 
 
@@ -67,7 +69,7 @@ Code is available at [Excellence Ilesamni's repo](https://github.com/lon-io/immu
 
 Model built using Keras and OpenCV2 to detect stripes on the image and determine the test results automatically from the uploaded and processes image.
 
-Full code found in VeereshShringar's [repo](https://github.com/VeereshShringari/COVID-testing).
+Full code found in [Veeresh Shringar's repo](https://github.com/VeereshShringari/COVID-testing).
 
 A very simple legacy implementation done at the MIT Hackathon is located at result_recognition_old/, though it's not used anymore.
 
