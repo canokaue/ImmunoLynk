@@ -1,5 +1,5 @@
 # ImmunoLynk: COVID19 Immunity Testing Results on the Blockchain
-MIT COVID Hack Challenge 2020: Team #thedreamteam
+Lumiata COVID-19 Global AI [Hackathon](https://www.lumiata.com/lumiata-covid-19-global-ai-hackathon/) Winner!
 
 This is a simple but effective implementation of a blockchain-based descentralized test results validator.
 
