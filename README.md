@@ -1,6 +1,8 @@
 # ImmunoLynk: COVID19 Immunity Testing Results on the Blockchain
 Lumiata COVID-19 Global AI [Hackathon](https://www.lumiata.com/lumiata-covid-19-global-ai-hackathon/) Winner!
 
+Covidathon[https://covidathon.devpost.com/] 2nd Place.
+
 This is a simple but effective implementation of a blockchain-based descentralized test results validator.
 
 The project is divided into the sections bellow.
