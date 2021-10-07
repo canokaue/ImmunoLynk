@@ -13,7 +13,7 @@ The project is divided into the sections bellow.
 
 Server built on Flask using an HTTP API. All requests are handled then sent to an IPFS Blockchain instance running on AWS EC2. Infura's [API](https://infura.io/docs) was used to connect to a public IPFS node and register the data permanently or temporarily (depends on the PIN variable in server.py).
 
-For production, a private node implementation example is providade in the /private_ipfs_node folder, courtesy of [dfile.app](dfile.app).
+For production, a private node implementation example is provided in the /private_ipfs_node folder, courtesy of [dfile.app](dfile.app).
 
 The endpoins are:
 
@@ -77,4 +77,4 @@ A very simple legacy implementation done at the MIT Hackathon is located at resu
 
 ## Blockchain database alternative
 
-Since images are uploaded in a two-part process (image uploaded as multiform then image data uploadaded as raw json), a more cost effective alternative was also tested using BigchainDB to store the metadata.
+Since images are uploaded in a two-part process (image uploaded as multiform then image data uploaded as raw json), a more cost effective alternative was also tested using BigchainDB to store the metadata.
